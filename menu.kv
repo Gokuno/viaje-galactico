@@ -1,0 +1,27 @@
+
+
+<MenuWidget>:
+    canvas.before:
+        Color:
+            rgba: 0, 0, 0, .8
+        Rectangle: 
+            size: self.size
+    Label:
+        font_size: dp(70)
+        font_name: 'fonts/GrandGalaxy-Rpopl.otf'
+        text: root.parent.menu_title
+        pos_hint: { "center_x": .5, "center_y": .6 }
+    Label:
+        font_size: dp(20)
+        font_name: 'fonts/GrandGalaxy-Rpopl.otf'
+        text: root.parent.menu2_title
+        pos_hint: { "center_x": .5, "center_y": .45 }
+    Button:
+        font_size: dp(20)
+        font_name: 'fonts/PoeGalaxy-zMrD.ttf'
+        text: root.parent.menu_button_title
+        pos_hint: { "center_x": .5, "center_y": .3 }
+        size_hint: .2, .15
+        on_press: root.parent.on_menu_button_pressed()
+        background_normal: ''
+        background_color: .4, .3, 1, .80
