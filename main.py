@@ -2,6 +2,7 @@ from kivy.config import Config
 Config.set('graphics', 'width', '1200')
 Config.set('graphics', 'height', '600')
 
+import os
 from kivy.lang import Builder
 from kivy import platform
 from kivy.core.window import Window
